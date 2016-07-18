@@ -1,0 +1,343 @@
+html, body {
+  min-height: 100%;
+  min-width: 100%;
+  overflow-x: hidden;
+}
+
+.container-fluid {
+  padding: 0;
+}
+.container-fluid#frontPage {
+  background-image: url("images/Toronto_Skyline_Through_Island.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+.navbar {
+  border-radius: 0;
+  margin-bottom: 0;
+}
+.navbar-inverse .navbar-nav>li>a {
+  transition: all 0.5s;
+}
+
+.navbar-inverse .navbar-nav>li>a:focus, .navbar-inverse .navbar-nav>li>a:hover {
+  background-color: rgb(56, 171, 136);
+}
+
+.navLink {
+  color: #f4eded;
+  transition: color 1s ease;
+  font-size: 2em;
+  font-family:'Baloo Bhai', cursive;
+  text-align: center;
+}
+.navLink:hover, .navLink:focus {
+  color: #ffffff;
+}
+
+/*JUMBOTRON*/
+.container .jumbotron, .container-fluid .jumbotron {
+  border-radius: 0;
+}
+
+.jumbotron {
+  min-height: 100vh;
+  background-color: rgba(56, 171, 136, 0.65);
+  margin-bottom: 0;
+}
+
+.mainTitle {
+  margin: 13% 0 25% 0;
+}
+
+.jumbotron h1.homePageTitle {
+  color: #fff;
+  font-family: "Baloo Bhai", cursive;
+  text-shadow: 4px 3px 0 rgb(150, 0, 0);
+  font-size: 8em;
+}
+
+.jumbotron p {
+  color: rgb(150, 0, 0);
+}
+
+/*SKILLS SECTION*/
+
+section {
+	position: relative;
+	/*padding: 10em ;*/
+	background: black;
+	color: #fff;
+}
+
+.col-3.column {
+	padding: 0 1%;
+	width: 33%;
+	text-align: center;
+}
+
+.column {
+	display: inline-block;
+	vertical-align: top;
+}
+
+section::before,
+section::after {
+	position: absolute;
+	content: '';
+	pointer-events: none;
+}
+
+.ss-style-doublediagonal {
+	z-index: 1;
+	/*padding-top: 6em;*/
+	background: rgb(150, 0, 0);
+}
+
+.ss-style-doublediagonal::before,
+.ss-style-doublediagonal::after {
+	top: 0;
+	left: -25%;
+	z-index: -1;
+	width: 150%;
+	height: 75%;
+	background: inherit;
+	-webkit-transform: rotate(-2deg);
+	transform: rotate(-2deg);
+	-webkit-transform-origin: 0 0;
+	transform-origin: 0 0;
+}
+
+.ss-style-doublediagonal::before {
+	height: 50%;
+	background: #fff;
+	-webkit-transform: rotate(-3deg);
+	transform: rotate(-3deg);
+	-webkit-transform-origin: 3% 0;
+	transform-origin: 3% 0;
+}
+
+.aboutMe-container {
+  min-height: 100%;
+  min-width: 100%;
+  margin: 0;
+  padding: 3em;
+  padding-bottom: 7em;
+  background-image: url("images/leopard.jpg");
+  background-repeat: no-repeat;
+  background-position: -1600px -1050px;
+  background-attachment: fixed;
+}
+
+.tabs .tab a {
+  font-size: 2em;
+  color: white;
+}
+
+.tabs .tab a:hover {
+  color: rgb(56, 171, 136);
+}
+
+a:focus, a:hover {
+  text-decoration: none;
+
+}
+
+.tabs .indicator {
+  background-color: rgb(56, 171, 136);
+}
+
+.blackTint {
+  margin-bottom: -20px;
+}
+
+
+/*h1.me{
+  font-family: 'Baloo Bhai', cursive;
+  font-size: 5em;
+}
+
+h2.me {
+  font-family: 'Baloo Bhai', cursive;
+  font-size: 5em;
+}
+
+.skills {
+  text-align: right;
+}
+
+.skillsList > li{
+  list-style: none;
+  text-align: left;
+}
+.tabs {
+  background-color: transparent;
+}
+.tabs .tab a {
+  color: #fff;
+}*/
+.about-div {
+  margin: auto;
+  padding: 10px 15px;
+}
+
+.about-div > h1 {
+  font-family: 'Baloo Bhai', cursive;
+  text-align: center;
+  margin: 0;
+  color: #fff;
+  text-shadow: 4px 3px 0 rgb(150, 0, 0);
+}
+
+span {
+  font-size: 1.5em;
+}
+/*.blackTint {
+  background-image: url("images/All_Gizah_Pyramids.jpg");
+  background-size: cover;
+  background-position: 0 -120px;
+}*/
+.recentWork-container {
+    min-height: 100vh;
+    min-width: 100%;
+    margin: 0;
+    padding: 3em;
+    padding-bottom: 7em;
+    color:rgb(150,0,0);
+    background-color: rgba(113, 182, 161, 1);
+}
+
+img {
+  width: 100%;
+}
+
+#techKingdom {
+  color: white;
+}
+#techKingdom:hover {
+  text-decoration: none;
+  color: white;
+}
+
+.hoverDiv {
+  opacity:0;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.85);
+  min-width: 100%;
+  min-height: 100%;
+  z-index: 1;
+
+  -webkit-transition-property: opacity;
+  -webkit-transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-out;
+
+  -moz-transition-property: opacity;
+  -moz-transition-duration: 0.3s;
+  -moz-transition-timing-function: ease-out;
+
+  -o-transition-property: opacity;
+  -o-transition-duration: 0.3s;
+  -o-transition-timing-function: ease-out;
+
+  transition-property: opacity;
+  transition-duration: 0.3s;
+  transition-timing-function: ease-out;
+
+}
+
+.hoverTitle {
+  position: relative;
+  top:150px;
+}
+
+.hoverDiv:hover {
+  opacity: 1;
+}
+
+/*MOBILE SCREEN MAX WIDTH 667PX (IPHONE 6--LANDSCAPE)*/
+
+.mobileTitle {
+  display: none;
+}
+
+/*MOBILE SM-MD SIZE PORTRAIT*/
+
+@media (max-width: 413px) and (min-width: 260px){
+
+  #frontPage {
+    background-position: -205px 40px;
+  }
+
+  .mainTitle {
+    margin: 45% 0;
+  }
+
+  .jumbotron h1.homePageTitle  {
+    font-size: 4.2em;
+  }
+
+
+  .aboutMe-container {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .about-div {
+    padding: 5px 0;
+  }
+
+  h1.me {
+    font-size: 1.6em;
+  }
+
+  h2.me {
+    font-size: 1.2em;
+  }
+
+  .tabs {
+    overflow: none;
+  }
+
+  .tabs .tab a {
+    font-size: 1em;
+  }
+
+  span {
+    font-size: 1em;
+  }
+}
+
+/*SMALL TO MEDIUM MOBILE SCREEN LANDSCAPE*/
+
+@media (min-width: 376px) and (max-width: 667px) {
+
+  .container-fluid>.navbar-collapse, .container-fluid>.navbar-header, .container>.navbar-collapse, .container>.navbar-header {
+  margin: 0;
+  }
+
+  .mainTitle {
+    margin: 45% 0;
+  }
+
+  .jumbotron h1.homePageTitle  {
+    font-size: 4.8em;
+  }
+
+  .jumbotron {
+    /*height: 800px;*/
+  }
+
+  .mobileTitle {
+    display: block;
+    color: #fff;
+  }
+  .jumbotron .h1, .jumbotron h1 {
+    color: #fff;
+  }
+
+  .me {
+    font-size: 1em;
+  }
+
+}
