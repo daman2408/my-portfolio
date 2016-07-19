@@ -11,23 +11,13 @@ gulp.task('imagemin', function() {
 
 
 gulp.task('minify-css', function() {
-  return gulp.src('app/css/*.css')
+  return gulp.src('styles/*.css')
     .pipe(cleanCSS())
       .pipe(gulp.dest('dist'));
 });
 
 gulp.task('minify', function() {
-  return gulp.src('app/html/*.html')
+  return gulp.src('./*.html')
     .pipe(htmlmin({collapseWhitespace: true}))
     .pipe(gulp.dest('dist'))
-});
-
-gulp.task('tinypng', function () {
-    gulp.src('images/**/*.{png,jpg,jpeg}')
-        .pipe(tinypng({
-            key: 'API_KEY',
-            sigFile: 'images/.tinypng-sigs',
-            log: true
-        }))
-        .pipe(gulp.dest('dist/images'));
 });

@@ -8,7 +8,7 @@ html, body {
   padding: 0;
 }
 .container-fluid#frontPage {
-  background-image: url("../../images/Toronto_Skyline_Through_Island.jpg");
+  background-image: url("../../dist/images/Toronto_Skyline_Through_Island.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -103,18 +103,14 @@ section::after {
 	width: 150%;
 	height: 75%;
 	background: inherit;
-	-webkit-transform: rotate(-2deg);
 	transform: rotate(-2deg);
-	-webkit-transform-origin: 0 0;
 	transform-origin: 0 0;
 }
 
 .ss-style-doublediagonal::before {
 	height: 50%;
 	background: #fff;
-	-webkit-transform: rotate(-3deg);
 	transform: rotate(-3deg);
-	-webkit-transform-origin: 3% 0;
 	transform-origin: 3% 0;
 }
 
@@ -124,7 +120,7 @@ section::after {
   margin: 0;
   padding: 3em;
   padding-bottom: 7em;
-  background-image: url("../../images/leopard2.jpg");
+  background-image: url("../../dist/images/leopard2.jpg");
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
@@ -223,18 +219,6 @@ img {
   min-width: 100%;
   min-height: 100%;
   z-index: 1;
-
-  -webkit-transition-property: opacity;
-  -webkit-transition-duration: 0.3s;
-  -webkit-transition-timing-function: ease-out;
-
-  -moz-transition-property: opacity;
-  -moz-transition-duration: 0.3s;
-  -moz-transition-timing-function: ease-out;
-
-  -o-transition-property: opacity;
-  -o-transition-duration: 0.3s;
-  -o-transition-timing-function: ease-out;
 
   transition-property: opacity;
   transition-duration: 0.3s;
