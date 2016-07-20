@@ -219,9 +219,10 @@ i:hover {
 
 @media (max-width: 413px) and (min-width: 260px){
 
-  #frontPage {
-    background-size:contain;
-    background-position: -1250px -500px;
+  .container-fluid#frontPage {
+
+    background-size: auto;
+    background-position: -626px -300px;
   }
 
   .mainTitle {
@@ -281,7 +282,8 @@ i:hover {
   }
 
   .container-fluid#frontPage {
-    background-size: contain;
+    background-size: cover;
+    background-repeat: no-repeat;
   }
 
   .mainTitle {
@@ -313,6 +315,11 @@ i:hover {
 
 @media (min-width: 414px) and (max-width: 435px) {
 
+  .container-fluid#frontPage {
+    background-attachment: fixed;
+    background-position: -220px 50px;
+  }
+
   .jumbotron h1.homePageTitle  {
     font-size: 5em;
   }
@@ -320,12 +327,6 @@ i:hover {
   .mainTitle {
     margin: 45% 0;
     margin-bottom: 25%;
-  }
-
-  .container-fluid#frontPage {
-    background-attachment: fixed;
-    background-repeat: repeat;
-    background-position: -220px 50px;
   }
 
   .aboutMe-container {
@@ -352,8 +353,10 @@ i:hover {
 
   .container-fluid#frontPage {
     background-size: 230% auto;
-    background-position: -170px 0px;
+    background-size: cover;
+    background-position: -80px 0px;
     background-attachment: fixed;
+    background-repeat: no-repeat;
   }
 
   .mainTitle {
@@ -387,8 +390,9 @@ i:hover {
   font-size: 1em;
 }
 
-#frontPage {
+.container-fluid#frontPage {
   background-attachment: fixed;
+  background-position: -150px;
 }
 
 .aboutMe-container {
