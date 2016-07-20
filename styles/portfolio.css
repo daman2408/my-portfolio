@@ -11,8 +11,6 @@ html, body {
 }
 .container-fluid#frontPage {
   background-image: url("images/Toronto_Skyline_Through_Island.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
 }
 .navbar {
   border-radius: 0;
@@ -219,9 +217,10 @@ i:hover {
 
 @media (max-width: 413px) and (min-width: 260px){
 
-  #frontPage {
-    background-size:contain;
-    background-position: -1250px -500px;
+  .container-fluid#frontPage {
+
+    background-repeat: no-repeat;
+    background-position: -600px -300px;
   }
 
   .mainTitle {
