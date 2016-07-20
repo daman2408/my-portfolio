@@ -166,6 +166,13 @@
     <script src="node_modules/jquery/dist/jquery.min.js"></script>
     <script src="node_modules/materialize-css/dist/js/materialize.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script>
+      $(document).on('click', '.navbar-collapse.in', function(e) {
+        if ($(e.target).is('a')) {
+          $(this).collapse('hide');
+        }
+      });
+    </script>
     <script src="node_modules/aos/dist/aos.js"></script>
     <script src="node_modules/gulp/bin/gulp.js"></script>
     <script>
