@@ -13,6 +13,8 @@
     <!-- GOOGLE FONTS -->
     <link href='https://fonts.googleapis.com/css?family=Nobile:400,700,400italic' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Noto+Sans' rel='stylesheet' type='text/css'>
+    <!-- FONT AWESOME -->
+    <script src="https://use.fontawesome.com/bf522b7166.js"></script>
     <!-- CUSTOM STYLES -->
     <link rel="stylesheet" href="dist/portfolio.css" media="screen" title="no title" charset="utf-8">
     <title>Daman's Portfolio</title>
@@ -20,7 +22,7 @@
 
 <body>
     <div class="container-fluid page-wrap">
-        <div class="container-fluid" id="frontPage">
+        <div class="container-fluid" id="frontPage" style="position: relative;">
 
             <nav class="navbar navbar-inverse navbar-fixed-top">
                 <div class="container-fluid">
@@ -34,7 +36,7 @@
                     </div>
                     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                         <ul class="nav navbar-nav">
-                            <li><a class="navLink" href="#">HOME <span class="sr-only">(current)</span></a></li>
+                            <li><a class="navLink" href="#">Home <span class="sr-only">(current)</span></a></li>
                             <li><a class="navLink" href="#myName">DAMAN</a></li>
                             <li><a class="navLink" href="#myWork">WORK</a></li>
                             <li><a class="navLink" href="#">CONTACT</a></li>
@@ -46,7 +48,7 @@
             </nav>
 
             <div class="jumbotron">
-                <div class="mainTitle" data-aos="zoom-in-down">
+                <div class="mainTitle">
                     <h1 class="homePageTitle">Front End Developer</h1>
                     <p>Welcome to my Portfolio Page</p>
                 </div>
@@ -59,13 +61,14 @@
 
             <section class="ss-style-doublediagonal">
                 <div class="aboutMe-container">
+                  <div class="aboutMe-inside-wrap">
                     <div class="container-fluid aboutMe">
                         <div class="row">
 
 
                             <div class="col-md-offset-2 col-xs-offset-0 col-md-8 col-xs-12">
                                 <div id="myName" class="about-div">
-                                    <h1 data-aos="zoom-out-up">DAMAN MANGAT</h1>
+                                    <h1 class="name" data-aos="zoom-out-up">DAMAN MANGAT</h1>
                                 </div>
                                 <div id="myInfo" class="about-div">
                                     <div id="myTabs" class="about-div" data-aos="fade-up">
@@ -98,6 +101,7 @@
                         </div>
 
                     </div>
+                  </div>
                 </div>
             </section>
 
@@ -130,24 +134,28 @@
                     <div class="container">
                         <div class="row">
                             <div class="col l6 s12">
-                                <h5 class="white-text">Footer Content</h5>
-                                <p class="grey-text text-lighten-4">You can use rows and columns here to organize your footer content.</p>
+                                <h5 class="white-text">Hire Me</h5>
+                                <ul>
+                                  <li><a class="grey-text text-lighten-3" href="#!"><i class="fa fa-envelope-o" aria-hidden="true"></i>damanvir32@gmail.com</a></li>
+                                  <li><a class="grey-text text-lighten-3" href="#!"><i class="fa fa-mobile fa-2x" aria-hidden="true"></i>(905) 512-6734</a></li>
+                                  <li><a class="grey-text text-lighten-3" href="#!"><i class="fa fa-skype" aria-hidden="true"></i>daman.mangat</a></li>
+                                </ul>
                             </div>
                             <div class="col l4 offset-l2 s12">
-                                <h5 class="white-text">Links</h5>
-                                <ul>
-                                    <li><a class="grey-text text-lighten-3" href="#!">Link 1</a></li>
-                                    <li><a class="grey-text text-lighten-3" href="#!">Link 2</a></li>
-                                    <li><a class="grey-text text-lighten-3" href="#!">Link 3</a></li>
-                                    <li><a class="grey-text text-lighten-3" href="#!">Link 4</a></li>
-                                </ul>
+                                <h5 class="white-text">Social</h5>
+                                    <a class="grey-text text-lighten-3" href="#!"><i class="fa fa-facebook-square fa-3x" aria-hidden="true"></i></a>
+                                    <a class="grey-text text-lighten-3" href="#!"><i class="fa fa-linkedin-square fa-3x" aria-hidden="true"></i></a>
+                                    <a class="grey-text text-lighten-3" href="#!"><i class="fa fa-twitter-square fa-3x" aria-hidden="true"></i></a>
+                                    <a class="grey-text text-lighten-3" href="#!">
+                                    <i class="fa fa-instagram fa-3x" aria-hidden="true"></i></a>
+                                    <a class="grey-text text-lighten-3" href="#!">
+                                    <i class="fa fa-github-square fa-3x" aria-hidden="true"></i></a>
                             </div>
                         </div>
                     </div>
                     <div class="footer-copyright">
                         <div class="container">
                             © 2016 Daman Mangat
-                            <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
                         </div>
                     </div>
                 </footer>
@@ -163,9 +171,8 @@
     <script>
         AOS.init({
             offset: 180,
-            duration: 700,
+            duration: 400,
             easing: 'ease-in-sine',
-            delay: 10,
         });
     </script>
 
