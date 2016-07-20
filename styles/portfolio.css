@@ -391,8 +391,10 @@ i:hover {
 }
 
 .container-fluid#frontPage {
+  background-size: 140% auto;
+  background-position: 0px 0px;
   background-attachment: fixed;
-  background-position: -150px;
+  background-repeat: no-repeat;
 }
 
 .aboutMe-container {
