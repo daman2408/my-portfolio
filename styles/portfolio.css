@@ -290,6 +290,10 @@ i:hover {
     font-size: 1em;
   }
 
+  .skills-right {
+    padding-left: 10%;
+  }
+
   span {
     font-size: 1em;
   }
@@ -326,6 +330,14 @@ i:hover {
     font-size: 0.7em;
   }
 
+  #skills {
+    font-size: 1.8em;
+  }
+
+  ul li{
+    padding: 4.5px 0;
+  }
+
   span {
     font-size: 2em;
     line-height: 2em;
@@ -358,6 +370,28 @@ i:hover {
     font-size: 0.5em;
     background-attachment: fixed;
     background-position: -450px;
+  }
+
+  #skills {
+    background-color:rgba(23, 23, 23, 0.6);
+    overflow:hidden;
+    border-radius:3px;
+    padding:28px 8px;
+    font-size: 2em;
+  }
+
+  .skills-left {
+    float: left;
+    padding-left:10%;
+  }
+
+  .skills-right {
+    float: left;
+    padding-left: 10%;
+  }
+
+  ul li{
+    padding: 4.5px 0;
   }
 
   span {
