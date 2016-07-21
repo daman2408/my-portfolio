@@ -72,9 +72,8 @@ body, .page-wrap, .container-fluid {
 
 section {
 	position: relative;
-	/*padding: 10em ;*/
 	background: black;
-	color: #fff;
+	color: #eee;
 }
 
 .col-3.column {
@@ -256,13 +255,13 @@ i:hover {
 
 
   .aboutMe-container {
-    min-height: 100vh;
+    min-height: 130vh;
     padding-left: 0;
     padding-right: 0;
     padding-bottom: 0;
     background-repeat: no-repeat;
-    background-size: auto;
-    background-position: -350px;
+    background-size: cover;
+    background-position: -400px;
   }
 
   .about-div {
@@ -324,6 +323,8 @@ i:hover {
 
   .aboutMe-container {
     min-height: 170vh;
+    background-size: auto;
+    background-position: -280px 0px;
   }
 
   .about-div {
@@ -402,10 +403,9 @@ i:hover {
 
 }
 
-/*IPAD OR TABLET SCREEN*/
+/*IPAD PORTRAIT*/
 
-@media (min-width:768px) and (max-width: 1023px) {
-
+@media (min-width: 767px) and (max-width: 772px) {
 
   .container-fluid#frontPage {
     background-size: 230% auto;
@@ -421,13 +421,30 @@ i:hover {
   }
 
   .aboutMe-container {
-    background-position: -450px -30px;
+    background-size: 230% auto;
+    background-position: -550px -30px;
     background-attachment: fixed;
     padding: 0;
   }
 
   .aboutMe {
     padding-top: 60px;
+  }
+
+  #skills {
+    font-size: 1.6em;
+  }
+
+  .skills-left {
+    padding-left:10%;
+  }
+
+  .skills-right {
+    padding-left: 10%;
+  }
+
+  ul li{
+    padding: 3.5px 0;
   }
 
   span {
@@ -438,8 +455,108 @@ i:hover {
 }
 
 
+/*NEXUS 6P LANDSCAPE*/
+
+@media (min-width:773px) and (max-width: 774px) {
+
+
+  .container-fluid#frontPage {
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+  }
+
+  .mainTitle {
+    margin: 12% 0;
+    margin-bottom: 25%;
+  }
+
+  .aboutMe-container {
+    height: 150vh;
+    background-size: cover;
+    /*background-position: -150px -30px;*/
+    background-attachment: fixed;
+    padding: 0;
+  }
+
+  .aboutMe {
+    padding-top: 60px;
+  }
+  #skills {
+    font-size: 1.6em;
+  }
+
+  .skills-left {
+    padding-left:10%;
+  }
+
+  .skills-right {
+    padding-left: 10%;
+  }
+
+  ul li{
+    padding: 3.5px 0;
+  }
+
+  span {
+    font-size: 1.7em;
+    line-height: 2em;
+  }
+
+}
+
+/*TABLET LANDSCAPE*/
+
+@media (min-width: 774px) and (max-width: 1439px) {
+
+  .container-fluid#frontPage {
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+  }
+
+  .mainTitle {
+    margin: 25% 0;
+    margin-bottom: 25%;
+  }
+
+  .aboutMe-container {
+    background-size: cover;
+    /*background-position: -150px -30px;*/
+    background-attachment: fixed;
+    padding: 0;
+  }
+
+  .aboutMe {
+    padding-top: 60px;
+  }
+  #skills {
+    font-size: 1.6em;
+  }
+
+  .skills-left {
+    padding-left:10%;
+  }
+
+  .skills-right {
+    padding-left: 10%;
+  }
+
+  ul li{
+    padding: 3.5px 0;
+  }
+
+  span {
+    font-size: 1.7em;
+    line-height: 2em;
+  }
+
+
+}
+
+
 /*LAPTOP OR COMPUTER SCREEN*/
-@media (min-width: 1024px) {
+@media (min-width: 1440px) {
 
 
 .navLink {
@@ -454,6 +571,7 @@ i:hover {
 }
 
 .aboutMe-container {
+  height: 130vh;
   background-size: cover;
   background-attachment: fixed;
   padding: 0;
@@ -463,9 +581,26 @@ i:hover {
   padding-top: 100px;
 }
 
+#skills {
+  font-size: 2.5em;
+}
+
+.skills-left {
+  padding-left:10%;
+}
+
+.skills-right {
+  padding-left: 10%;
+}
+
+ul li{
+  padding: 10.5px 0;
+}
+
 span {
-  font-size: 2em;
+  font-size: 1.7em;
   line-height: 2em;
 }
+
 
 }
