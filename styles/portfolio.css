@@ -260,8 +260,8 @@ i:hover {
     padding-right: 0;
     padding-bottom: 0;
     background-repeat: no-repeat;
-    background-size: cover;
-    background-position: -400px;
+    background-size: 400% auto;
+    background-position: -520px;
   }
 
   .about-div {
