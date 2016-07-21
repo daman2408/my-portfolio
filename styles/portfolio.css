@@ -5,11 +5,9 @@ html, body {
   font-family: 'Nobile', sans-serif;
 }
 
-body, .page-wrap {
+body, .page-wrap, .container-fluid {
   min-width: 100%;
 }
-
-
 
 .container-fluid {
   padding: 0;
@@ -170,6 +168,23 @@ a:focus, a:hover {
   text-shadow: 4px 3px 0 #202020;
 }
 
+#skills {
+  background-color:rgba(23, 23, 23, 0.6);
+  overflow:hidden;
+  border-radius:3px;
+  padding:28px 8px;
+}
+
+.skills-left {
+  float: left;
+  padding-left:10%;
+}
+
+.skills-right {
+  float: left;
+  padding-left: 20%;
+}
+
 span {
   font-size: 1.5em;
 }
@@ -246,7 +261,7 @@ i:hover {
     padding-right: 0;
     padding-bottom: 0;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: auto;
     background-position: -350px;
   }
 
