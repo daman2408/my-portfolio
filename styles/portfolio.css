@@ -13,7 +13,7 @@ body, .page-wrap, .container-fluid {
   padding: 0;
 }
 .container-fluid#frontPage {
-  background-image: url("images/Toronto_Skyline_Through_Island.jpg");
+  background-image: url("../images/Toronto_Skyline_Through_Island\ copy.jpg");
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -21,7 +21,17 @@ body, .page-wrap, .container-fluid {
   border-radius: 0;
   margin-bottom: 0;
 }
+
+.navbar-collapse {
+  border: none;
+}
+nav {
+  box-shadow: none;
+}
+
 .navbar-inverse .navbar-nav>li>a {
+  color: black;
+  border-right: 1px black;
   transition: all 0.5s;
 }
 
@@ -36,6 +46,7 @@ body, .page-wrap, .container-fluid {
   font-family:'Nabile', sans-serif;
   font-weight: 100;
   text-align: center;
+  display: inline-block;
 }
 .navLink:hover, .navLink:focus {
   color: #ffffff;
@@ -64,9 +75,6 @@ body, .page-wrap, .container-fluid {
   font-size: 8em;
 }
 
-.jumbotron p {
-  color: rgb(32, 32, 32);
-}
 
 /*SKILLS SECTION*/
 
@@ -241,8 +249,8 @@ i:hover {
 
   .container-fluid#frontPage {
 
-    background-size: auto;
-    background-position: -626px -300px;
+    background-size: 300%;
+    background-position: -225px 0px;
   }
 
   .mainTitle {
@@ -407,6 +415,10 @@ i:hover {
 
 @media (min-width: 767px) and (max-width: 772px) {
 
+  .navbar-inverse {
+    background: transparent;
+  }
+
   .container-fluid#frontPage {
     background-size: 230% auto;
     background-size: cover;
@@ -459,6 +471,10 @@ i:hover {
 
 @media (min-width:773px) and (max-width: 774px) {
 
+  .navbar-inverse {
+    background: transparent;
+  }
+
 
   .container-fluid#frontPage {
     background-size: cover;
@@ -509,6 +525,10 @@ i:hover {
 
 @media (min-width: 774px) and (max-width: 1439px) {
 
+  .navbar-inverse {
+    background: transparent;
+  }
+
   .container-fluid#frontPage {
     background-size: cover;
     background-attachment: fixed;
@@ -557,6 +577,10 @@ i:hover {
 
 /*LAPTOP OR COMPUTER SCREEN*/
 @media (min-width: 1440px) {
+
+  .navbar-inverse {
+    background: transparent;
+  }
 
 
 .navLink {
