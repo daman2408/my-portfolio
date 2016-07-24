@@ -7,6 +7,7 @@ html, body {
 body, .page-wrap, .container-fluid {
   min-width: 100%;
   overflow: scroll;
+  overflow-x: hidden;
   margin: 0;
 }
 
@@ -35,14 +36,50 @@ button:focus {
 .drawer-nav {
   background-color: rgb(32, 32, 32);
   color: #ab9850;
+  padding-top: 12px;
+  border-bottom: .1px solid inherit;
+  border-bottom-left-radius: 10%;
+  border-bottom-right-radius: 10%;
+}
+
+.drawer-brand {
+  font-size: 3em;
+  font-weight: 200;
+}
+
+.drawer-menu-item {
+  font-size: 2em;
+  font-weight: 100;
 }
 
 .drawer-brand, .drawer-menu-item {
+  font-family: 'Raleway', sans-serif;
   color: #ab9850;
+  transition: color .4s ease-out;
 }
 
-a:focus, a:hover {
-  color: inherit;
+.drawer-menu-item:focus, .drawer-menu-item:hover {
+  color: rgb(102, 102, 102);
+  text-decoration: none;
+}
+
+a:hover, a:focus {
+  color: rgb(102, 102, 102);
+}
+
+nav ul {
+  padding-top: 18px;
+}
+
+nav ul li {
+  border-bottom: 3px inset #ab9850;
+  border-radius: 20%;
+  padding: 8px;
+  border-top-left-radius: 20%;
+}
+
+nav ul li a {
+  text-align: center;
 }
 
 /*JUMBOTRON*/
@@ -353,6 +390,7 @@ i:hover {
   .aboutMe-container {
     background-size: auto;
     background-position: -280px 0px;
+    padding-bottom: 6em;
   }
 
   .tabs .tab a {
@@ -467,7 +505,7 @@ i:hover {
     background-size: 230% auto;
     background-position: -550px -30px;
     background-attachment: fixed;
-    padding: 0;
+    padding: 6em 0;
   }
 
   .aboutMe {
@@ -572,12 +610,9 @@ i:hover {
     background-size: cover;
     /*background-position: -150px -30px;*/
     background-attachment: fixed;
-    padding: 0;
+    padding: 6em 0;
   }
 
-  .aboutMe {
-    padding-top: 60px;
-  }
   #skills {
     font-size: 1.6em;
   }
