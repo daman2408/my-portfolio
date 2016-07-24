@@ -9,9 +9,10 @@
     <!-- STYLES -->
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="node_modules/materialize-css/dist/css/materialize.min.css">
+    <link rel="stylesheet" href="node_modules/jquery-drawer/dist/css/drawer.min.css">
     <link rel="stylesheet" href="node_modules/aos/dist/aos.css">
     <!-- GOOGLE FONTS -->
-    <link href='https://fonts.googleapis.com/css?family=Nobile:400,700,400italic' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Raleway:100,200,300,400,700,900' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Noto+Sans' rel='stylesheet' type='text/css'>
     <!-- FONT AWESOME -->
     <script src="https://use.fontawesome.com/bf522b7166.js"></script>
@@ -20,109 +21,94 @@
     <title>Daman's Portfolio</title>
 </head>
 
-<body>
+<body class="drawer drawer--top">
     <div class="container-fluid page-wrap">
         <div class="container-fluid" id="frontPage">
-
-            <nav class="navbar navbar-inverse navbar-fixed-top">
-                <div class="container-fluid">
-                    <div class="navbar-header">
-                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-                            <span class="sr-only">Toggle navigation</span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                        </button>
-                    </div>
-                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                        <ul class="nav navbar-nav">
-                            <li><a class="navLink" href="#">Home<span class="sr-only">(current)</span></a></li>
-                            <li><a class="navLink" href="#myName">Daman</a></li>
-                            <li><a class="navLink" href="#myWork">Work</a></li>
-                            <li><a class="navLink" href="#contact">Contact</a></li>
-                        </ul>
-                    </div>
-                    <!-- /.navbar-collapse -->
-                </div>
-                <!-- /.container-fluid -->
-            </nav>
+            <header role="banner">
+                <button type="button" class="drawer-toggle drawer-hamburger" id="hamburger">
+                    <span class="sr-only">toggle navigation</span>
+                    <span class="drawer-hamburger-icon"></span>
+                </button>
+                <nav class="drawer-nav" role="navigation" id="theNav">
+                    <ul class="drawer-menu">
+                        <li><a class="drawer-brand" href="#">Brand</a></li>
+                        <li><a class="drawer-menu-item" href="#">Nav1</a></li>
+                        <li><a class="drawer-menu-item" href="#">Nav2</a></li>
+                    </ul>
+                </nav>
+            </header>
 
             <div class="jumbotron">
                 <div class="mainTitle">
                     <h1 class="homePageTitle">Daman Mangat</h1>
-                    <p>I'm a Front End Developer</p>
+                    <p>I'm a Front End Web Developer</p>
                 </div>
-                <!-- <h1 class="mobileTitle">Front-End Developer</h1>
-              <p class="mobileTitle">
-                  Welcome
-                  <br /> to my Portfolio Page
-              </p> -->
             </div>
 
-            <section  id="myName" class="ss-style-doublediagonal">
+            <section id="myName" class="ss-style-doublediagonal">
                 <div class="aboutMe-container">
-                  <div class="aboutMe-inside-wrap">
-                    <div class="container-fluid aboutMe">
-                        <div class="row">
+                    <div class="aboutMe-inside-wrap" style="min-height: 100%;">
+                        <div class="container-fluid aboutMe" style="min-height: 100%;">
+                            <div class="row" style="min-height: 100%;">
 
 
-                            <div class="col-md-offset-2 col-xs-offset-0 col-md-8 col-xs-12">
-                                <div class="about-div">
-                                    <h1 class="name" data-aos="zoom-out-up">ABOUT ME</h1>
-                                </div>
-                                <div id="myInfo" class="about-div">
-                                    <div id="myTabs" class="about-div" data-aos="fade-up">
-                                        <ul class="tabs">
-                                            <li class="tab col-xs-4"><a class="active" href="#about">About</a></li>
-                                            <li class="tab col-xs-4"><a href="#skills">Skills</a></li>
-                                            <li class="tab col-xs-4"><a href="#interests">Interests</a></li>
-                                        </ul>
+                                <div class="col-md-offset-2 col-xs-offset-0 col-md-8 col-xs-12" style="min-height: 100%;">
+                                    <div class="about-div" style="min-height: 100%;">
+                                        <h1 class="name" data-aos="zoom-out-up">ABOUT ME</h1>
                                     </div>
-                                    <div class="about-div active-content">
-                                        <div id="about" data-aos="fade-up">
-                                            <span>I am a front-end web developer, based in Toronto, ON. With a love, passion, and unquenchable drive to learn, I pride myself in creating beautiful, functional websites onto the world-wide-web!</span>
+                                    <div id="myInfo" class="about-div">
+                                        <div id="myTabs" class="about-div" data-aos="fade-up">
+                                            <ul class="tabs">
+                                                <li class="tab col-xs-4"><a class="active" href="#about">About</a></li>
+                                                <li class="tab col-xs-4"><a href="#skills">Skills</a></li>
+                                                <li class="tab col-xs-4"><a href="#interests">Interests</a></li>
+                                            </ul>
                                         </div>
-                                        <div id="skills" data-aos="fade-up">
-                                          <div class="skills-left">
-                                            <ul>
-                                              <li>HTML5/CSS3</li>
-                                              <li>JavaScript</li>
-                                              <li>jQuery</li>
-                                              <li>AngularJS</li>
-                                              <li>AJAX</li>
-                                              <li>Node.js</li>
-                                              <li>JSON</li>
-                                              <li>RESTful API</li>
-                                            </ul>
-                                          </div>
-                                          <div class="skills-right">
-                                            <ul>
-                                              <li>Materialize</li>
-                                              <li>BootStrap</li>
-                                              <li>Git/Version Control</li>
-                                              <li>GitHub</li>
-                                              <li>Gulp</li>
-                                              <li>Responsive Design</li>
-                                            </ul>
-                                          </div>
+                                        <div class="about-div active-content">
+                                            <div id="about" class="info-div" data-aos="fade-up">
+                                                <span>I am a front-end web developer, based in Toronto, ON. With a love, passion, and unquenchable drive to learn, I pride myself in creating beautiful, functional websites onto the world-wide-web!</span>
+                                            </div>
+                                            <div id="skills" class="info-div" data-aos="fade-up">
+                                                <div class="skills-left">
+                                                    <ul>
+                                                        <li>HTML5/CSS3</li>
+                                                        <li>JavaScript</li>
+                                                        <li>jQuery</li>
+                                                        <li>AngularJS</li>
+                                                        <li>AJAX</li>
+                                                        <li>Node.js</li>
+                                                        <li>JSON</li>
+                                                        <li>RESTful API</li>
+                                                    </ul>
+                                                </div>
+                                                <div class="skills-right">
+                                                    <ul>
+                                                        <li>Materialize</li>
+                                                        <li>BootStrap</li>
+                                                        <li>Git/Version Control</li>
+                                                        <li>GitHub</li>
+                                                        <li>Gulp</li>
+                                                        <li>Responsive Design</li>
+                                                    </ul>
+                                                </div>
 
-                                        </div>
-                                        <div id="interests" data-aos="fade-up">
-                                            <span>  video games
+                                            </div>
+                                            <div id="interests" class="info-div" data-aos="fade-up">
+                                                <span>  video games
                                             <br /> basketball
                                             <br /></span>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
 
+                        </div>
                     </div>
-                  </div>
                 </div>
             </section>
 
-            <section id="myWork"  class="ss-style-doublediagonal">
+            <section id="myWork" class="ss-style-doublediagonal">
                 <div class="blackTint">
                     <div class="recentWork-container">
                         <div class="container-fluid">
@@ -153,19 +139,19 @@
                             <div class="col l6 s12">
                                 <h4 class="white-text">HIRE ME</h4>
                                 <ul>
-                                  <li><a class="grey-text text-lighten-3" href="#!"><i class="fa fa-envelope-o" aria-hidden="true"></i>damanvir32@gmail.com</a></li>
-                                  <li><a class="grey-text text-lighten-3" href="#!"><i class="fa fa-mobile fa-2x" aria-hidden="true"></i>(905) 512-6734</a></li>
-                                  <li><a class="grey-text text-lighten-3" href="#!"><i class="fa fa-skype" aria-hidden="true"></i>daman.mangat</a></li>
+                                    <li><a class="grey-text text-lighten-3" href="#!"><i class="fa fa-envelope-o" aria-hidden="true"></i>damanvir32@gmail.com</a></li>
+                                    <li><a class="grey-text text-lighten-3" href="#!"><i class="fa fa-mobile fa-2x" aria-hidden="true"></i>(905) 512-6734</a></li>
+                                    <li><a class="grey-text text-lighten-3" href="#!"><i class="fa fa-skype" aria-hidden="true"></i>daman.mangat</a></li>
                                 </ul>
                             </div>
                             <div class="col l4 offset-l2 s12">
                                 <h5 class="white-text">Social</h5>
-                                    <a class="grey-text text-lighten-3" href="#!"><i class="fa fa-facebook-square fa-3x" aria-hidden="true"></i></a>
-                                    <a class="grey-text text-lighten-3" href="#!"><i class="fa fa-linkedin-square fa-3x" aria-hidden="true"></i></a>
-                                    <a class="grey-text text-lighten-3" href="#!"><i class="fa fa-twitter-square fa-3x" aria-hidden="true"></i></a>
-                                    <a class="grey-text text-lighten-3" href="#!">
+                                <a class="grey-text text-lighten-3" href="#!"><i class="fa fa-facebook-square fa-3x" aria-hidden="true"></i></a>
+                                <a class="grey-text text-lighten-3" href="#!"><i class="fa fa-linkedin-square fa-3x" aria-hidden="true"></i></a>
+                                <a class="grey-text text-lighten-3" href="#!"><i class="fa fa-twitter-square fa-3x" aria-hidden="true"></i></a>
+                                <a class="grey-text text-lighten-3" href="#!">
                                     <i class="fa fa-instagram fa-3x" aria-hidden="true"></i></a>
-                                    <a class="grey-text text-lighten-3" href="#!">
+                                <a class="grey-text text-lighten-3" href="#!">
                                     <i class="fa fa-github-square fa-3x" aria-hidden="true"></i></a>
                             </div>
                         </div>
@@ -181,15 +167,22 @@
     </div>
     <!-- Scripts -->
     <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="node_modules/iscroll/build/iscroll.js"></script>
+    <script src="node_modules/jquery-drawer/dist/js/drawer.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('.drawer').drawer();
+        });
+    </script>
     <script src="node_modules/materialize-css/dist/js/materialize.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-    <script>
+    <!-- <script>
       $(document).on('click', '.navbar-collapse.in', function(e) {
         if ($(e.target).is('a')) {
           $(this).collapse('hide');
         }
       });
-    </script>
+    </script> -->
     <script src="node_modules/aos/dist/aos.js"></script>
     <script src="node_modules/gulp/bin/gulp.js"></script>
     <script>
