@@ -6,7 +6,7 @@ html, body {
 
 body, .page-wrap, .container-fluid {
   min-width: 100%;
-  overflow: hidden;
+  overflow: scroll;
   margin: 0;
 }
 
@@ -18,6 +18,7 @@ body, .page-wrap, .container-fluid {
   background-size: cover;
   background-repeat: no-repeat;
 }
+
 
 button:focus {
   background-color: transparent;
@@ -31,6 +32,19 @@ button:focus {
   background-color: #ab9850;
 }
 
+.drawer-nav {
+  background-color: rgb(32, 32, 32);
+  color: #ab9850;
+}
+
+.drawer-brand, .drawer-menu-item {
+  color: #ab9850;
+}
+
+a:focus, a:hover {
+  color: inherit;
+}
+
 /*JUMBOTRON*/
 .container .jumbotron, .container-fluid .jumbotron {
   border-radius: 0;
@@ -39,6 +53,7 @@ button:focus {
 .jumbotron {
   background-color: rgba(171, 152, 56, 0.65);
   margin-bottom: 0;
+  padding-bottom: 250px;
 }
 
 .mainTitle {
@@ -157,11 +172,10 @@ a:focus, a:hover {
 
 .about-div > h1 {
   font-family: 'Raleway', sans-serif;
-  font-weight: 100;
+  font-weight: 500;
   text-align: center;
   margin: 0;
   color: #fff;
-  text-shadow: 4px 3px 0 #202020;
 }
 
 .info-div {
@@ -229,6 +243,10 @@ i {
 
 i:hover {
   color: rgb(171, 152, 56);
+}
+
+.social_Links {
+  display: inline;
 }
 
 
@@ -337,6 +355,11 @@ i:hover {
     background-position: -280px 0px;
   }
 
+  .tabs .tab a {
+    font-size: 3.444em;
+    color: white;
+  }
+
   .about-div {
     font-size: 0.7em;
   }
@@ -383,6 +406,7 @@ i:hover {
     height: 100%;
     padding: 7em 25px;
     font-size: 0.5em;
+    font-weight: 200;
     background-attachment: fixed;
     background-position: -450px;
   }
@@ -391,7 +415,7 @@ i:hover {
     background-color:rgba(23, 23, 23, 0.6);
     overflow:hidden;
     border-radius:3px;
-    padding:28px 8px;
+    padding:28px 5px;
     font-size: 2em;
   }
 
@@ -596,14 +620,19 @@ i:hover {
 }
 
 .aboutMe-container {
-  height: 130vh;
   background-size: cover;
   background-attachment: fixed;
-  padding: 0;
+  padding: 6em 0;
+  padding-bottom: 10em;
 }
 
 .aboutMe {
   padding-top: 100px;
+}
+
+.tabs .tab a {
+  font-size: 3em;
+  color: white;
 }
 
 #skills {
@@ -623,7 +652,8 @@ ul li{
 }
 
 span {
-  font-size: 1.7em;
+  font-weight: 200;
+  font-size: 2.7em;
   line-height: 2em;
 }
 
