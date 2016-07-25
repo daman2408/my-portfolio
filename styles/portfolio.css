@@ -34,23 +34,19 @@ button:focus {
 }
 
 .drawer-nav {
-  background-color: rgb(32, 32, 32);
+  background-color: rgba(252, 252, 252, 0.95);
   color: #ab9850;
-
   padding-top: 12px;
-  border-bottom: .1px solid inherit;
-  border-bottom-left-radius: 10%;
-  border-bottom-right-radius: 10%;
 }
 
 .drawer-brand {
   font-size: 3em;
-  font-weight: 200;
+  font-weight: 500;
 }
 
 .drawer-menu-item {
-  font-size: 2em;
-  font-weight: 100;
+  font-size: 2.6em;
+  font-weight: 500;
 }
 
 .drawer-brand, .drawer-menu-item {
@@ -74,14 +70,16 @@ nav ul {
 
 nav ul li {
   border-bottom: 3px inset #ab9850;
-  border-radius: 20%;
   padding: 8px;
-  border-top-left-radius: 20%;
 }
 
 nav ul li a {
   text-align: center;
 >>>>>>> exp
+}
+
+nav ul a:hover {
+  background-color: transparent;
 }
 
 /*JUMBOTRON*/
@@ -145,7 +143,7 @@ section::after {
 
 .ss-style-doublediagonal {
 	z-index: 1;
-	background: rgb(32, 32, 32);
+	background: #545454;
   box-sizing: border-box;
 }
 
@@ -179,6 +177,11 @@ section::after {
 
 }
 
+.aboutMe {
+  min-height: 100%;
+  overflow: initial;
+}
+
 .tabs .tab a {
   font-size: 2em;
   color: white;
@@ -203,7 +206,7 @@ a:focus, a:hover {
 
 .about-div {
   font-family: 'Raleway', sans-serif;
-  font-weight: 100;
+  font-weight: 500;
   margin: auto;
   padding: 10px 15px;
   line-height: 2em;
