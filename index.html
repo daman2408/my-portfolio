@@ -31,9 +31,9 @@
                 </button>
                 <nav class="drawer-nav" role="navigation" id="theNav">
                     <ul class="drawer-menu">
-                        <li><a class="drawer-brand" href="#">Daman Mangat</a></li>
-                        <li><a class="drawer-menu-item" href="#myName">About Me</a></li>
-                        <li style="border: none;"><a class="drawer-menu-item" href="#myWork">Recent Work</a></li>
+                        <li><a class="drawer-brand drawer-item" href="#">Daman Mangat</a></li>
+                        <li><a class="drawer-menu-item drawer-item" href="#myName">About Me</a></li>
+                        <li style="border: none;"><a class="drawer-menu-item drawer-item" href="#myWork">Recent Work</a></li>
                     </ul>
                 </nav>
             </header>
@@ -184,7 +184,7 @@
     <script>
         $(document).ready(function() {
             $('.drawer').drawer();
-            $('.drawer-menu-item').click(function() {
+            $('.drawer-item').click(function() {
               $('.drawer').drawer('close');
             })
         });
