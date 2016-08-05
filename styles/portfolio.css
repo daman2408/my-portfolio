@@ -261,20 +261,6 @@ img {
   color: white;
 }
 
-.hoverDiv {
-  opacity:0;
-  position: absolute;
-  background-color: rgba(0, 0, 0, 0.85);
-  min-width: 100%;
-  min-height: 100%;
-  z-index: 1;
-
-  transition-property: opacity;
-  transition-duration: 0.3s;
-  transition-timing-function: ease-out;
-
-}
-
 i {
   padding-right: 10px;
   transition-property: color;
