@@ -25,6 +25,10 @@ button:focus {
   background-color: transparent;
 }
 
+/*
+ * NAVIGATION
+ */
+
 .drawer-hamburger-icon, .drawer-hamburger-icon:before, .drawer-hamburger-icon:after {
   background-color: #d4d4d4;
 }
@@ -45,6 +49,10 @@ button:focus {
   font-weight: 500;
 }
 
+/*.drawer-menu {
+  margin-top: 35px;
+}*/
+
 .drawer-menu-item {
   font-size: 2.6em;
   font-weight: 500;
@@ -54,6 +62,7 @@ button:focus {
   font-family: 'Raleway', sans-serif;
   color: #ab9850;
   transition: color .4s ease-out;
+  font-weight: 600;
 }
 
 .drawer-menu-item:focus, .drawer-menu-item:hover {
@@ -70,12 +79,12 @@ nav ul {
 }
 
 nav ul li {
-  border-bottom: 3px inset #ab9850;
   padding: 8px;
 }
 
 nav ul li a {
   text-align: center;
+
 >>>>>>> exp
 }
 
@@ -96,10 +105,12 @@ nav ul a:hover {
 
 .mainTitle {
   margin: 7% 0 25% 0;
+  text-align: center;
 }
 
 .jumbotron h1.homePageTitle {
   color: #fff;
+  text-align: center;
   font-family: 'Raleway', sans-serif;
   font-weight: 500;
   text-shadow: 4px 3px 0 rgb(32, 32, 32);
@@ -109,7 +120,16 @@ nav ul a:hover {
 .jumbotron p {
   font-size: 2em;
   font-family: 'Raleway', sans-serif;
-  font-weight: 100;
+  font-weight: 300;
+}
+
+strong {
+  font-weight: 700;
+}
+
+#title {
+  margin-top: 8em;
+  margin-bottom: 3em;
 }
 
 
@@ -580,6 +600,7 @@ i:hover {
     margin: 15% 0;
     margin-bottom: 25%;
     margin-right: 10%;
+    margin-left: 10%;
   }
 
   .aboutMe-container {

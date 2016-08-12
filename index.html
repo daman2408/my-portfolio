@@ -15,7 +15,7 @@
     <link href='https://fonts.googleapis.com/css?family=Raleway:100,200,300,400,700,900' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Noto+Sans' rel='stylesheet' type='text/css'>
     <!-- FONT AWESOME -->
-    <script src="https://use.fontawesome.com/bf522b7166.js"></script>
+    <!-- <script src="https://use.fontawesome.com/bf522b7166.js"></script> -->
     <!-- CUSTOM STYLES -->
     <link rel="stylesheet" href="dist/portfolio.css">
     <title>Daman's Portfolio</title>
@@ -32,20 +32,32 @@
                     <span class="drawer-hamburger-icon"></span>
                 </button>
                 <nav class="drawer-nav" role="navigation" id="theNav">
-                    <ul class="drawer-menu">
+                    <ul class="drawer-menu" id="drawer-menu">
                         <li><a class="drawer-brand drawer-item" href="#">Daman Mangat</a></li>
                         <li><a class="drawer-menu-item drawer-item" href="#myName">About Me</a></li>
                         <li style="border: none;"><a class="drawer-menu-item drawer-item" href="#myWork">Recent Work</a></li>
+                        <li style="border: none;"><a class="drawer-menu-item drawer-item" href="#contact">Contact</a></li>
                     </ul>
                 </nav>
             </header>
 
-            <div class="jumbotron">
-                <div class="mainTitle">
-                    <h1 class="homePageTitle">Daman Mangat</h1>
-                    <p>I'm a highly motivated <strong>Front End Web Developer</strong> based in Toronto, ON. Experienced in freelance developing <strong>for all stages of website development,</strong> I am skilled in a multitude of tools and technologies, pay attention to detail and am a self-starter.
-                    </p>
+            <div class="jumbotron" style="background: rgb(92, 210, 141); text-align: center; height: 100vh">
+              <div id="title"class="container" style="background:rgb(173, 117, 201);">
+                <div class="row" style="background:rgb(2, 178, 199)">
+                  <div class="col-xs-12" style="background-color:rgb(177, 82, 104);">
+                    <h1>Daman Mangat</h1>
+                  </div>
                 </div>
+                <div class="row">
+                  <div class="col-md-offset-2 col-md-8" style="background:rgb(252, 98, 39)">
+                    <button>Learn More</button>
+                  </div>
+                </div>
+              </div>
+
+
+
+
             </div>
 
             <section id="myName" class="ss-style-doublediagonal" style="background: rgb(23, 23, 23)">
@@ -185,6 +197,21 @@
               $('.drawer').drawer('close');
             })
         });
+        var drawer = document.getElementById('drawer-menu');
+        drawer.style.position = "absolute";
+        drawer.style.top = "50%";
+        drawer.style.left = "50%";
+        drawer.style.marginTop = -(drawer.offsetHeight/2).toString() + 'px';
+        drawer.style.marginLeft = -(drawer.offsetWidth/2).toString() + 'px';
+
+        var drawer = document.getElementById('drawer-menu');
+        drawer.style.position = "absolute";
+        drawer.style.top = "50%";
+        drawer.style.left = "50%";
+        drawer.style.marginTop = -(drawer.offsetHeight/2).toString() + 'px';
+        drawer.style.marginLeft = -(drawer.offsetWidth/2).toString() + 'px';
+
+
     </script>
     <script src="node_modules/materialize-css/dist/js/materialize.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
