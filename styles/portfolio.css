@@ -38,12 +38,14 @@ button:focus {
  */
 
 .drawer-hamburger-icon, .drawer-hamburger-icon:before, .drawer-hamburger-icon:after {
-  background-color: #d4d4d4;
+  background-color: #fff;
 }
 
 .drawer-hamburger-icon:focus {
-  background-color: #ab9850;
+  background-color: #fff;
 }
+
+
 
 .drawer-nav {
   background-color: rgb(23, 23, 23);
@@ -340,7 +342,7 @@ i:hover {
     height: 545px;
     padding-left: 0;
     padding-right: 0;
-    padding-bottom: 6em;
+    padding-bottom: 105em;
   }
 
   .about-div {
@@ -519,7 +521,8 @@ i:hover {
   }
 
   .aboutMe-container {
-    padding: 6em 0;
+    padding: 0.5em 0;
+    padding-bottom: 6em;
   }
 
   .aboutMe {
@@ -619,7 +622,9 @@ i:hover {
 
   .aboutMe-container {
 
-    padding: 6em 0;
+    padding: 0.5em 0;
+    padding-bottom: 6em;
+
   }
 
   #skills {
