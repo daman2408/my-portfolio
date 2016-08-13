@@ -14,10 +14,18 @@ body, .page-wrap, .container-fluid {
 .container-fluid {
   padding: 0;
 }
-.container-fluid#frontPage {
-  background-image: url("../images/Toronto_Skyline_Through_Island\ copy.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
+#frontPage {
+  background-color: rgba(171, 152, 56, 0.65);
+}
+
+
+.btn-large {
+  background: #171717;
+  color: #ab9838;
+}
+
+.btn-large:hover {
+  background: #262626;
 }
 
 
@@ -98,9 +106,11 @@ nav ul a:hover {
 }
 
 .jumbotron {
-  background-color: rgba(171, 152, 56, 0.65);
+  background-color: transparent;
   margin-bottom: 0;
   padding-bottom: 250px;
+  text-align: center;
+  height: 100vh
 }
 
 .mainTitle {
@@ -266,6 +276,10 @@ span {
     padding-bottom: 7em;
     color:rgb(150,0,0);
     background-color: rgb(171, 152, 80);
+}
+
+#work {
+  rgba(171,152,56,.65);
 }
 
 img {
