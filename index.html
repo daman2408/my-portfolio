@@ -41,7 +41,7 @@
                 </nav>
             </header>
 
-            <div class="jumbotron">
+            <div class="jumbotron" id="jumbo">
                 <div id="title" class="container">
                     <div class="row">
                         <div class="col-xs-12">
@@ -247,29 +247,9 @@
     <script src="node_modules/jquery/dist/jquery.min.js"></script>
     <script src="node_modules/iscroll/build/iscroll.js"></script>
     <script src="node_modules/jquery-drawer/dist/js/drawer.min.js"></script>
-    <script>
-        $(document).ready(function() {
-            $('.drawer').drawer();
-            $('.drawer-item').click(function() {
-                $('.drawer').drawer('close');
-            })
-        });
-        var drawer = document.getElementById('drawer-menu');
-        drawer.style.position = "absolute";
-        drawer.style.top = "50%";
-        drawer.style.left = "50%";
-        drawer.style.marginTop = -(drawer.offsetHeight / 2).toString() + 'px';
-        drawer.style.marginLeft = -(drawer.offsetWidth / 2).toString() + 'px';
-
-        var drawer = document.getElementById('drawer-menu');
-        drawer.style.position = "absolute";
-        drawer.style.top = "50%";
-        drawer.style.left = "50%";
-        drawer.style.marginTop = -(drawer.offsetHeight / 2).toString() + 'px';
-        drawer.style.marginLeft = -(drawer.offsetWidth / 2).toString() + 'px';
-    </script>
     <script src="node_modules/materialize-css/dist/js/materialize.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="styles.js"></script>
     <script src="node_modules/aos/dist/aos.js"></script>
     <script>
         AOS.init({

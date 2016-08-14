@@ -112,7 +112,7 @@ nav ul a:hover {
   margin-bottom: 0;
   padding-bottom: 250px;
   text-align: center;
-  height: 100vh
+
 }
 
 .mainTitle {
@@ -244,17 +244,17 @@ a:focus, a:hover {
 #skills-container {
   padding:1em 0;
   padding-bottom:5em;
-  color: #ab9850;
+  color: rgb(32, 32, 32);
 }
 .progress {
   height: 15px;
-  border: 2px solid rgb(32, 32, 32);
+  border: 2px solid #ab9850;
   background: #fff;
 }
 /*#ab9850*/
 
 .progress-bar {
-  background: rgb(32, 32, 32);
+  background:#ab9850;
 }
 
 .recentWork-container {
@@ -310,12 +310,13 @@ i:hover {
     background-position: -425px 0px;
   }
 
-  .jumbotron {
-    padding-bottom: 1.4em;
-  }
 
   .mainTitle {
     margin: 45% 0;
+  }
+
+  .jumbotron {
+    padding-bottom: 16em;
   }
 
   .jumbotron h1.homePageTitle  {
@@ -324,6 +325,10 @@ i:hover {
 
   .jumbotron p {
     font-size: 1.6em;
+  }
+
+  #title {
+    margin-top: 2em;
   }
 
 
@@ -390,7 +395,7 @@ i:hover {
   }
 
   .jumbotron {
-    padding-bottom: 85px;
+    padding-bottom: 17em;
   }
 
   .jumbotron h1.homePageTitle  {
@@ -433,7 +438,7 @@ i:hover {
 
 /*LARGE MOBILE PORTRAIT*/
 
-@media (min-width: 414px) and (max-width: 436px) {
+@media (min-width: 414px) and (max-width: 534px) {
 
   .container-fluid#frontPage {
     background-size: 300%;
@@ -441,12 +446,12 @@ i:hover {
     background-position: -260px;
   }
 
-  .jumbotron {
-    padding-bottom: 147px;
-  }
-
   .jumbotron h1.homePageTitle  {
     font-size: 5em;
+  }
+
+  #title {
+    margin-top: 1.5em;
   }
 
   .mainTitle {
@@ -501,7 +506,11 @@ i:hover {
   }
 
   .jumbotron {
-    padding-bottom: 160px;
+    padding-bottom: 44em;
+  }
+
+  #title {
+    margin-top: 18em;
   }
 
   .mainTitle {
