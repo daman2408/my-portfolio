@@ -151,6 +151,7 @@ section {
 	position: relative;
 	background: black;
 	color: #eee;
+  overflow-x: hidden;
 
 }
 
@@ -273,6 +274,10 @@ a:focus, a:hover {
   rgba(171,152,56,.65);
 }
 
+#thumbnail {
+  padding: 1.2em 0;
+}
+
 img {
   width: 100%;
 }
@@ -283,6 +288,34 @@ img {
 #techKingdom:hover {
   text-decoration: none;
   color: white;
+}
+
+.work-container {
+  overflow: hidden;
+}
+
+.work-hover {
+  position:absolute;
+  width:100%;
+  opacity: 0;
+  transition: opacity, 0.2s;
+}
+
+.work-hover:hover {
+  opacity: 1;
+}
+
+.workBox {
+  background: rgb(32, 32, 32);
+}
+
+.glyphicon {
+  position:absolute;
+  top:50%;
+  left: 50%;
+  margin-left: -12px;
+  margin-top: -12px;
+  color: #ab9850;
 }
 
 i {
@@ -605,10 +638,6 @@ i:hover {
     background-size: cover;
     background-attachment: fixed;
     background-repeat: no-repeat;
-  }
-
-  .jumbotron {
-    padding-bottom: 155px;
   }
 
   .mainTitle {

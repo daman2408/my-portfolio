@@ -22,11 +22,15 @@
     window.addEventListener('resize', function() {
       var windowH = window.outerHeight.toString();
       var jumbotron = document.getElementsByClassName('jumbotron');
-      jumbotron.style.height = windowH + "px";
+      jumbotron.height = windowH + "px";
     })
 
     document.body.addEventListener('load', function() {
       var windowH = window.outerHeight.toString();
       var jumbotron = document.getElementsByClassName('jumbotron');
-      jumbotron.style.height = windowH + "px";
+      jumbotron.height = windowH + "px";
     });
+
+    var thumbnail = (document.getElementById('techKingdomImage').offsetHeight).toString();
+    var gotQ = document.getElementById('gotQ');
+    gotQ.style.height = thumbnail + "px";
