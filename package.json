@@ -32,7 +32,8 @@
     "iscroll": "^5.2.0",
     "jquery": "^2.2.4",
     "jquery-drawer": "^3.2.0",
-    "materialize-css": "^0.97.6"
+    "materialize-css": "^0.97.6",
+    "particles.js": "^2.0.0"
   },
   "devDependencies": {
     "gulp-imagemin": "^3.0.1"

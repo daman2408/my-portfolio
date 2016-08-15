@@ -34,3 +34,7 @@
     var thumbnail = (document.getElementById('techKingdomImage').offsetHeight).toString();
     var gotQ = document.getElementById('gotQ');
     gotQ.style.height = thumbnail + "px";
+
+    particlesJS.load('particles-js', 'node_modules/particles.js/demo/particles.json', function() {
+      console.log('callback - particles.js config loaded');
+    });
