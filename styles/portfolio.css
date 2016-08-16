@@ -369,7 +369,8 @@ i:hover {
   }
 
   #title {
-    margin-top: 2em;
+    margin-top: 12em;
+    margin-bottom: -5.5em;
   }
 
 
@@ -417,7 +418,7 @@ i:hover {
 
 /*MOBILE SCREEN LANDSCAPE*/
 
-@media (min-width: 568px) and (max-width: 736px) {
+@media (min-width: 567px) and (max-width: 736px) {
 
   .container-fluid>.navbar-collapse, .container-fluid>.navbar-header, .container>.navbar-collapse, .container>.navbar-header {
   margin: 0;
@@ -436,11 +437,15 @@ i:hover {
   }
 
   .jumbotron {
-    padding-bottom: 17em;
+    padding-bottom: 70px;
   }
 
   .jumbotron h1.homePageTitle  {
     font-size: 3.8em;
+  }
+
+  #title {
+    margin-top: .4em;
   }
 
   .aboutMe-container {
@@ -492,7 +497,7 @@ i:hover {
   }
 
   #title {
-    margin-top: 1.5em;
+    margin-top: 11.5em;
   }
 
   .mainTitle {
@@ -547,7 +552,7 @@ i:hover {
   }
 
   .jumbotron {
-    padding-bottom: 44em;
+    padding-bottom: 32em;
   }
 
   #title {

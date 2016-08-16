@@ -23,21 +23,22 @@
       var windowH = window.outerHeight.toString();
       var jumbotron = document.getElementsByClassName('jumbotron');
       jumbotron.height = windowH + "px";
+
+      var thumbnail = (document.getElementById('techKingdomImage').offsetHeight).toString();
+      var gotQ = document.getElementById('gotQ');
+      gotQ.style.height = thumbnail + "px";
     })
 
     document.body.addEventListener('load', function() {
       var windowH = window.outerHeight.toString();
       var jumbotron = document.getElementsByClassName('jumbotron');
       jumbotron.height = windowH + "px";
+      var jum = jumbotron.height;
 
       var particle = document.getElementById('particles-js');
-      particle.height = windowH + "px";
+      particle.height = jum.toString() + "px";
 
     });
-
-    var thumbnail = (document.getElementById('techKingdomImage').offsetHeight).toString();
-    var gotQ = document.getElementById('gotQ');
-    gotQ.style.height = thumbnail + "px";
 
     particlesJS.load('particles-js', 'node_modules/particles.js/demo/particles.json', function() {
       console.log('callback - particles.js config loaded');
