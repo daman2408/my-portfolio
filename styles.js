@@ -29,6 +29,10 @@
       var windowH = window.outerHeight.toString();
       var jumbotron = document.getElementsByClassName('jumbotron');
       jumbotron.height = windowH + "px";
+
+      var particle = document.getElementById('particles-js');
+      particle.height = windowH + "px";
+
     });
 
     var thumbnail = (document.getElementById('techKingdomImage').offsetHeight).toString();
