@@ -1,0 +1,384 @@
+@media (max-width: 413px) and (min-width: 260px){
+
+  .jumbotron p {
+    font-size: 1.6em;
+  }
+
+  #title {
+    margin-top: 2em;
+    margin-bottom: 0;
+  }
+
+
+  .aboutMe-container {
+    height: 545px;
+    padding-left: 0;
+    padding-right: 0;
+    padding-bottom: 105em;
+  }
+
+  .about-div {
+    min-height: 100%;
+    padding: 5px 0;
+    padding-top: 20px;
+  }
+
+  .about-div > h1 {
+    font-size: 3.3em;
+  }
+
+  h1.me {
+    font-size: 1.6em;
+  }
+
+  h2.me {
+    font-size: 1.2em;
+  }
+
+  .tabs {
+    overflow: none;
+  }
+
+  .tabs .tab a {
+    font-size: 1em;
+  }
+
+  .skills-right {
+    padding-left: 10%;
+  }
+
+  span {
+    font-size: 1em;
+  }
+}
+
+/*MOBILE SCREEN LANDSCAPE*/
+
+@media (min-width: 567px) and (max-width: 736px) {
+
+  .container-fluid>.navbar-collapse, .container-fluid>.navbar-header, .container>.navbar-collapse, .container>.navbar-header {
+  margin: 0;
+  }
+
+  .container-fluid#frontPage {
+    background-size: 200%;
+    background-position: -100px -125px;
+    background-repeat: no-repeat;
+  }
+
+  .mainTitle {
+    margin:55px 10px;
+    margin-left: 0;
+    margin-top: 75px;
+  }
+
+  .jumbotron {
+    padding-bottom: 70px;
+  }
+
+  .jumbotron h1.homePageTitle  {
+    font-size: 3.8em;
+  }
+
+  #title {
+    margin-top: .4em;
+  }
+
+  .aboutMe-container {
+    padding-bottom: 6em;
+  }
+
+  .tabs .tab a {
+    font-size: 3.444em;
+    color: white;
+  }
+
+  .tabs .tab a {
+    font-size: 3.444em;
+    color: white;
+  }
+
+  .about-div {
+    font-size: 0.7em;
+  }
+
+
+  #skills {
+    font-size: 1.8em;
+  }
+
+  ul li{
+    padding: 4.5px 0;
+  }
+
+  span {
+    font-size: 3em;
+    line-height: 2em;
+  }
+
+}
+
+/*LARGE MOBILE PORTRAIT*/
+
+@media (min-width: 414px) and (max-width: 534px) {
+
+  .container-fluid#frontPage {
+    background-size: 300%;
+    background-attachment: fixed;
+    background-position: -260px;
+  }
+
+  .jumbotron h1.homePageTitle  {
+    font-size: 5em;
+  }
+
+  #title {
+    margin-top: 11.5em;
+  }
+
+  .mainTitle {
+    margin: 45% 0;
+    margin-bottom: 25%;
+  }
+
+  .aboutMe-container {
+    height: 100%;
+    padding: 7em 25px;
+    font-size: 0.5em;
+    font-weight: 200;
+  }
+
+  #skills {
+    background-color:rgba(23, 23, 23, 0.6);
+    overflow:hidden;
+    border-radius:3px;
+    padding:28px 5px;
+    font-size: 2em;
+  }
+
+  .skills-left, .skills-right {
+    float: left;
+    padding-left:9%;
+  }
+
+
+  ul li{
+    padding: 4.5px 0;
+  }
+
+  span {
+    font-size: 2em;
+    line-height: 2em;
+  }
+
+
+}
+
+/*IPAD PORTRAIT*/
+
+@media (min-width: 767px) and (max-width: 772px) {
+
+
+  .container-fluid#frontPage {
+    background-size: 230% auto;
+    background-size: cover;
+    background-position: -80px 0px;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+  }
+
+  .jumbotron {
+    padding-bottom: 32em;
+  }
+
+  #title {
+    margin-top: 18em;
+  }
+
+  .mainTitle {
+    margin: 45% 0;
+    margin-bottom: 25%;
+  }
+
+  .aboutMe-container {
+    padding: 0.5em 0;
+    padding-bottom: 6em;
+  }
+
+  .aboutMe {
+    padding-top: 60px;
+  }
+
+  #skills {
+    font-size: 1.6em;
+  }
+
+  .skills-left {
+    padding-left:10%;
+  }
+
+  .skills-right {
+    padding-left: 10%;
+  }
+
+  ul li{
+    padding: 3.5px 0;
+  }
+
+  span {
+    font-size: 2em;
+    line-height: 2em;
+  }
+
+}
+
+
+/*NEXUS 6P LANDSCAPE*/
+
+@media (min-width:773px) and (max-width: 774px) {
+
+  .navbar-inverse {
+    background: transparent;
+  }
+
+
+  .container-fluid#frontPage {
+    background-size: 100%;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+  }
+
+  .mainTitle {
+    margin: 0;
+  }
+
+
+  .aboutMe {
+    padding-top: 60px;
+  }
+  #skills {
+    font-size: 1.6em;
+  }
+
+  .skills-left {
+    padding-left:10%;
+  }
+
+  .skills-right {
+    padding-left: 10%;
+  }
+
+  ul li{
+    padding: 3.5px 0;
+  }
+
+  span {
+    font-size: 1.7em;
+    line-height: 2em;
+  }
+
+}
+
+/*TABLET LANDSCAPE*/
+
+@media (min-width: 776px) and (max-width: 1439px) {
+
+  .container-fluid#frontPage {
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+  }
+
+  .mainTitle {
+    margin: 15% 0;
+    margin-bottom: 25%;
+    margin-right: 10%;
+    margin-left: 10%;
+  }
+
+  .aboutMe-container {
+
+    padding: 0.5em 0;
+    padding-bottom: 6em;
+
+  }
+
+  #skills {
+    font-size: 1.6em;
+  }
+
+  .skills-left {
+    padding-left:10%;
+  }
+
+  .skills-right {
+    padding-left: 10%;
+  }
+
+  ul li{
+    padding: 3.5px 0;
+  }
+
+  span {
+    font-size: 1.7em;
+    line-height: 2em;
+  }
+
+
+}
+
+
+/*LAPTOP OR COMPUTER SCREEN*/
+@media (min-width: 1440px) {
+
+
+
+.container-fluid#frontPage {
+  background-size: 100%;
+  background-position: 0px 0px;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+
+.jumbotron {
+  padding-bottom: 300px;
+}
+
+.aboutMe-container {
+  padding: 6em 0;
+  padding-bottom: 10em;
+}
+
+.aboutMe {
+  padding-top: 100px;
+}
+
+.tabs .tab a {
+  font-size: 3em;
+  color: white;
+}
+
+#skills {
+  font-size: 2.5em;
+}
+
+.skills-left {
+  padding-left:10%;
+}
+
+.skills-right {
+  padding-left: 10%;
+}
+
+ul li{
+  padding: 10.5px 0;
+}
+
+span {
+  font-weight: 200;
+  font-size: 2.7em;
+  line-height: 2em;
+}
+
+
+}
